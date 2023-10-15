@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="search_div">
+                <form>
+                    <label for="search">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <input type="search" id="search" name="search"
+                        placeholder="search contact">
+                </form>
+            </div><!--search div-->
+
+            <div class="add_div">
+                <button class="addNew">
+                    <i class="fa fa-user-plus"></i>
+                    Add new contact
+                </button>
+            </div><!--add-->
+        </header>
+
+        <section class="form">
+            <div class="addNewContact">
+                <i class="fa fa-user-plus"></i>
+                <form action="">
+                    <input type="text" placeholder="full name" id="contact_form_name">
+                    <input type="text" placeholder="phone" id="contact_form_phone">
+                    <input type="email" placeholder="Email address" id="contact_form_email">
+                    <input type="text" placeholder="Home Address" id="contact_form_address">
+                </form>
+                <button class="save btn">
+                    <i class="fas fa-save"></i>save
+                </button>
+                <div class="close">
+                    <i class="far fa-window-close"></i>
+                </div><!--close-->
+            </div><!--addNewContact-->
+        </section>
+
+        <section class="table_section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#id</th>
+                        <th><i class="fa-solid fa-user"></i>Name</th>
+                        <th><i class="fa-solid fa-phone-flip"></i>Phone</th>
+                        <th><i class="fa-solid fa-envelope"></i>Email</th>
+                        <th><i class="fa-solid fa-location-dot"></i>Address</th>
+                        <th>Edit</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                  <tr></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
